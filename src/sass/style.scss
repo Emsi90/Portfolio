@@ -20,6 +20,7 @@ body {
 }
 
 .header {
+    position: fixed;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -28,7 +29,6 @@ body {
     border-bottom: 1px solid #d3d3d3;
     
     &__menu {
-        position: fixed;
         width: 100%;
         max-width: 1200px;
         background: #FFF;
@@ -81,6 +81,20 @@ body {
     flex-direction: column;
     align-items: center;
     
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        margin-top: 50px;
+        width: 100%;
+        max-width: 1200px;
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: 5px 0 10px -5px #cccccc,
+                    -5px 0 10px -5px #cccccc;
+    }
+    
     &__about-me {
         display: flex;
         flex-direction: row;
@@ -92,8 +106,9 @@ body {
         margin-left: 20px;
         width: 220px;
         height: 220px;
-//        border-radius: 50%;
-//        border: 5px solid #DFEFF0;
+        border-radius: 50%;
+        border: 5px solid #DFEFF0;
+//        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     }
     
     &__desc {
@@ -121,7 +136,35 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 0 40px;
-        box-sizing: border-box;
     }
+    
+    &__skills-list {
+        display: flex;
+        flex-direction: row;
+//        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    
+    &__skills-item {
+        width: 70px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    
+    &__skills-icon {
+        padding-bottom: 10px;
+    }
+    
 }
