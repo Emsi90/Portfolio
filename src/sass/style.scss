@@ -25,13 +25,11 @@ body {
     justify-content: center;
     width: 100%;
     height: 70px;
-    background: #FFF;
-    border-bottom: 1px solid #d3d3d3;
+    background: #212121;
     
     &__menu {
         width: 100%;
         max-width: 1200px;
-        background: #FFF;
     }
     
     &__list {
@@ -87,10 +85,10 @@ body {
         justify-content: center;
         align-items: center;
         
-        margin-top: 50px;
+        margin-top: 120px;
         width: 100%;
         max-width: 1200px;
-        background: rgba(255, 255, 255, 0.8);
+        background: #212121;
         box-shadow: 5px 0 10px -5px #cccccc,
                     -5px 0 10px -5px #cccccc;
     }
@@ -123,13 +121,13 @@ body {
     
     &__header {
         font-size: 2.5rem;
-        color: #000000;
+        color: #FFF;
         margin-bottom: 10px;
     }
     
     &__paragraph {
         font-size: 1.6rem;
-        color: #020202;
+        color: #FFF;
     }
     
     &__skills {
@@ -160,6 +158,7 @@ body {
         align-items: center;
         padding: 20px;
         font-size: 1.2rem;
+        color: #FFF;
         text-transform: uppercase;
     }
     
