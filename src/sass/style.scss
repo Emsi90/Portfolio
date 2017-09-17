@@ -23,6 +23,7 @@ body {
     max-width: 1920px;
     height: 70px;
     background: #253B6E;
+    z-index: 999;
     
     &__menu {
         width: 100%;
@@ -79,6 +80,7 @@ body {
     justify-content: center;
     
     &__entrance {
+        position: relative;
         width: 100%;
         height: 90vh;
         display: flex;
@@ -111,6 +113,61 @@ body {
         font-size: 2.2rem;
         font-weight: 300;
         color: #0dceda;
+    }
+    
+    &__entrance-avatar {
+        position: absolute;
+        bottom: -100px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(45deg);
+        overflow: hidden;
+//        border: 2px solid #253B6E;
+//        outline: 4px solid #253B6E;
+//        outline-offset: 1px;
+        box-shadow: 0 0 0 10px #FFF;
+        
+        &-img {
+            max-width: 100%;
+            transform: rotate(-45deg) scale(1.42);
+        }
+    }
+    
+    &__about-me {
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__header {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: #253B6E;
+    }
+    
+    &__underline {
+        width: 80px;
+        height: 3px;
+        border: none;
+        background: #D2ECF9;
+        margin: 20px 0;
+    }
+    
+    &__subtitle {
+        font-size: 1.8rem;
+        font-style: italic;
+        color: #1f5f8b;
+        margin-bottom: 50px;
+    }
+    
+    &__paragraph {
+        text-align: center;
+        width: 50%;
+        font-size: 1.8rem;
+        color: #505050;
+        line-height: 1.7;
     }
     
 //    &__container {
