@@ -1,6 +1,7 @@
 @import 'mixins';
 @import 'reset';
 @import 'default';
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600&subset=latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
 
 html {
@@ -9,14 +10,9 @@ html {
 
 body {
     line-height: 1.5;
-    background: #f2f2f2;
-    background-image: linear-gradient(45deg, #F9F9F9 25%, transparent 0),
-                      linear-gradient(45deg, transparent 75%, #F9F9F9 0),
-                      linear-gradient(45deg, #F9F9F9 25%, transparent 0),
-                      linear-gradient(45deg, transparent 75%, #F9F9F9 0);
-    background-position: 0 0, 10px 10px,
-                         10px 10px, 20px 20px; 
-    background-size: 20px 20px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
@@ -24,8 +20,9 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 1920px;
     height: 70px;
-    background: #212121;
+    background: #253B6E;
     
     &__menu {
         width: 100%;
@@ -48,7 +45,7 @@ body {
         transition: 0.2s all;
         
         &:hover {
-            background: #1E88E5;
+            background: #0dceda;
         }
     }
     
@@ -75,95 +72,137 @@ body {
 
 .content {
     width: 100%;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
-    &__container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        margin-top: 120px;
+    &__entrance {
         width: 100%;
-        max-width: 1200px;
-        background: #212121;
-        box-shadow: 5px 0 10px -5px #cccccc,
-                    -5px 0 10px -5px #cccccc;
-    }
-    
-    &__about-me {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    &__avatar {
-        margin-left: 20px;
-        width: 220px;
-        height: 220px;
-        border-radius: 50%;
-        border: 5px solid #DFEFF0;
-//        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
-    }
-    
-    &__desc {
-        padding: 40px;
-        width: 100%;
-        height: 100%;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-    }
-    
-    &__header {
-        font-size: 2.5rem;
-        color: #FFF;
-        margin-bottom: 10px;
-    }
-    
-    &__paragraph {
-        font-size: 1.6rem;
-        color: #FFF;
-    }
-    
-    &__skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    
-    &__skills-list {
-        display: flex;
-        flex-direction: row;
-//        flex-wrap: wrap;
-        justify-content: center;
         align-items: center;
-        padding: 50px 0;
-        
-        &:last-child {
-            padding-bottom: 0;
-        }
+        background: url('../img/head_bg_mid.jpg') center no-repeat;
+        background-size: cover;
     }
     
-    &__skills-item {
-        width: 70px;
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 20px;
-        font-size: 1.2rem;
+    &__entrance-logo {
+        width: 230px;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+    
+    &__entrance-header {
+        font-family: 'Montserrat', arial, sans-serif;
+        text-align: center;
         color: #FFF;
+    }
+    
+    &__entrance-name {
         text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: 600;
     }
     
-    &__skills-icon {
-        padding-bottom: 10px;
+    &__entrance-prof {
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: #0dceda;
     }
+    
+//    &__container {
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//        align-items: center;
+//        
+//        margin-top: 120px;
+//        width: 100%;
+//        max-width: 1200px;
+//        background: #212121;
+//        box-shadow: 5px 0 10px -5px #1f1f1f,
+//                    -5px 0 10px -5px #1f1f1f;
+//    }
+//    
+//    &__about-me {
+//        display: flex;
+//        flex-direction: row;
+//        justify-content: center;
+//        align-items: center;
+//    }
+//    
+//    &__avatar {
+//        margin-left: 20px;
+//        width: 220px;
+//        height: 220px;
+//        border-radius: 50%;
+////        border: 5px solid #000;
+////        clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+//    }
+//    
+//    &__desc {
+//        padding: 40px;
+//        width: 100%;
+//        height: 100%;
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//        align-items: flex-start;
+//    }
+//    
+//    &__header {
+//        font-size: 2.5rem;
+//        font-weight: 300;
+//        color: #01579B;
+//        margin-bottom: 10px;
+//    }
+//    
+//    &__paragraph {
+//        font-size: 1.6rem;
+//        color: #FFF;
+//    }
+//    
+//    &__skills {
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: center;
+//    }
+//    
+//    &__skills-list {
+//        display: flex;
+//        flex-direction: row;
+////        flex-wrap: wrap;
+//        justify-content: center;
+//        align-items: center;
+//        padding: 50px 0;
+//        
+//        &:last-child {
+//            padding-bottom: 0;
+//        }
+//    }
+//    
+//    &__skills-item {
+//        width: 70px;
+//        height: 80px;
+//        display: flex;
+//        flex-direction: column;
+//        justify-content: flex-end;
+//        align-items: center;
+//        padding: 20px;
+//        font-size: 1.2rem;
+//        color: #FFF;
+//        text-transform: uppercase;
+//    }
+//    
+//    &__skills-icon {
+//        padding-bottom: 10px;
+//    }
     
 }
+
+@import 'mq/desktop';
+@import 'mq/tablet';
+@import 'mq/mobile';
