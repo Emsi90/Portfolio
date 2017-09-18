@@ -2,8 +2,16 @@
     .content {
         
         &__entrance {
-            background: url('../img/head_bg_hd.jpg') center no-repeat;
-            background-size: cover;
-            }
+            background-image: url('../img/head_bg_hd.jpg');
+        }
+        
+        &__skills {
+            background-image: url('../img/skills_bg_hd.jpg');
+        }
+        
+        &__contact {
+            background-image: url('../img/kontakt_bg_hd.jpg');
+        }
+        
     }
 }

@@ -1,0 +1,37 @@
+@media (max-width: 600px) {
+    .content {
+        
+        &__entrance {
+            background-image: url('../img/head_bg_mini.jpg');
+        }
+        
+        &__skills {
+            background-image: url('../img/skills_bg_mini.jpg');
+        }
+        
+        &__contact {
+            background-image: url('../img/kontakt_bg_mini.jpg');
+        }
+        
+        &__entrance-logo {
+            width: 150px;
+            height: 90px;
+        }
+        
+        &__entrance-name {
+            font-size: 3rem;
+        }
+    
+        &__entrance-prof {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #0dceda;
+        }
+        
+        &__projects-item {
+            width: 100%;
+            height: 100%;
+        }
+        
+    }
+}
