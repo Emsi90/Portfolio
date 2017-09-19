@@ -45,6 +45,7 @@ body {
     &__menu {
         width: 100%;
         max-width: 1200px;
+        height: 100%;
     }
     
     &__list {
@@ -137,6 +138,7 @@ body {
     
     &__entrance-avatar {
         position: absolute;
+        left: calc(50% - 80px);
         bottom: -80px;
         width: 160px;
         height: 160px;
@@ -376,6 +378,7 @@ body {
     }
     
     &__copy {
+        text-align: center;
         font-size: 1.2rem;
         color: #d2ecf9;
     }
