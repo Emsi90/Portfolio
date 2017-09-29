@@ -75,21 +75,14 @@ gulp.task('clean', function() {
 // Minifikacja JS i konkatenacja
 gulp.task('jsmini', function() {
     
-    return gulp.src('src/*html')
+    return gulp.src('src/*.html')
         .pipe(useref())
-        .pipe(gulpif('*js', uglify()))
+        .pipe(gulpif('*.js', uglify()))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest('dist/'));
     
 });
 // -----------------------------------------------------------------
-
-gulp.task('htmlmini', function() {
-    
-  return gulp.src('src/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist/'));
-    
-});
 
 // Kompresja Obrazków
 gulp.task('images', function() {
@@ -132,7 +125,7 @@ gulp.task('upload', function() {
 // Tworzenie folderu dist
 gulp.task('build', function(cb) {
    
-    runSequence('clean', 'jsmini', 'htmlmini', 'copy', 'images', 'upload', cb);
+    runSequence('clean', 'jsmini', 'copy', 'images', 'upload', cb);
     
 });
 // -----------------------------------------------------------------------
