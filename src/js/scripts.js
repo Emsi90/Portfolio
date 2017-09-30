@@ -1,6 +1,6 @@
 (function() {
 
-    var header = document.querySelector('.header');
+    var header = document.querySelector('.header__menu');
 
     function scrollMenu() {
         
