@@ -1,7 +1,5 @@
 @import 'mixins';
 @import 'reset';
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600&subset=latin-ext');
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext');
 
 html {
     font: 62.5% 'Lato', arial, sans-serif;
@@ -286,23 +284,26 @@ body {
         height: 220px;
         margin: 10px;
         overflow: hidden;
-        background: linear-gradient(to bottom, #0dccda 1%,#1891ac 98%);
+        background: linear-gradient(to bottom, #0dccda 0%,#1891ac 100%);
         
-        &:hover {
+        &:hover, &:focus-within {
             box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
         }
         
-        &:hover .content__projects-img {
+        &:hover .content__projects-img, &:focus-within .content__projects-img {
             opacity: 0.1;
-            transform: scale(1.1)
+//            transform: scale(1.1);
         }
         
-        &:hover .content__projects-links {
+        &:hover .content__projects-links, &:focus-within .content__projects-links {
             top: 45%;
         }
     }
     
     &__projects-img {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         transition: 0.3s all;
@@ -312,8 +313,7 @@ body {
         width: 180px;
         position: absolute;
         left: 50%;
-        top: 100%;
-//        transform: translateY(-50%);
+        top: 120%;
         transform: translateX(-50%);
         transition: 0.3s all;
     }
@@ -332,13 +332,13 @@ body {
             background-repeat: no-repeat;
         }
         &--live {
-            padding-left: 35px;
+            padding: 10px 0 10px 35px;
             background-image: url('../img/live.png');
             background-position: center left;
             background-repeat: no-repeat;
         }
         
-        &:hover {
+        &:hover, &:focus {
             text-decoration: underline;
         }
     }
@@ -369,7 +369,7 @@ body {
         border-radius: 5px;
         background: linear-gradient(to bottom, #0dccda 1%,#1891ac 98%);
         
-        &:hover {
+        &:hover, &:focus {
             background: linear-gradient(to bottom, #1891ac 1%,#0dccda 98%);
             box-shadow: 0px 9px 10px -7px rgba(0,0,0,0.3);
         }
@@ -401,6 +401,5 @@ body {
 }
 
 @import 'default';
-@import 'form';
 @import 'mq/desktop';
 @import 'mq/mobile';

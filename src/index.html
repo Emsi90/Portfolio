@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,600&amp;subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Marcin Chojnacki junior front-end developer</title>
 </head>
@@ -60,7 +61,7 @@
     
         <section class="content__skills">
             <h2 class="content__header content__header--light">Umiejętności</h2>
-            <p class="content__subtitle content__subtitle--light">technologie i programy które wykorzystuję w swoich projektach...</p>
+            <h3 class="content__subtitle content__subtitle--light">technologie i programy które wykorzystuję w swoich projektach...</h3>
             <ul class="content__skills-list">
                 <li class="content__skills-item">
                     <img src="img/ps.png" class="content__skills-icon" alt="">
@@ -99,7 +100,7 @@
                     git
                 </li>
             </ul>
-            <p class="content__subtitle content__subtitle--light">W najbliższym czasie mam zamiar poznać:</p>
+            <h3 class="content__subtitle content__subtitle--light">W najbliższym czasie mam zamiar poznać:</h3>
             <ul class="content__skills-list">
                 <li class="content__skills-item">
                     <img src="img/react.png" class="content__skills-icon" alt="">
@@ -187,48 +188,6 @@
             <p class="content__subtitle content__subtitle--light">Skontaktuj się ze mną...</p>
             
             <a href="mailto:marcinchojnacki00@gmail.com" class="content__mail">marcinchojnacki00@gmail.com</a>
-            
-            <form id="form" class="form hide" action="mail.php" method="post">
-
-                <div class="name">
-                    <div class="fname row">
-                        <label for="fname">Imię:</label>
-                        <input type="text" name="fname" id="fname" required>
-                        <div class="invalid-text hide">Podaj swoje imię!</div>
-                    </div>
-                    <div class="lname row">
-                        <label for="lname">Nazwisko:</label>
-                        <input type="text" name="lname" id="lname" required>
-                        <div class="invalid-text hide">Podaj swoje nazwisko!</div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <label for="email">Adres e-mail:</label>
-                    <input type="email" name="email" id="email" required>
-                    <div class="invalid-text hide">Podaj poprawny adres e-mail! (np. xyz@domena.pl)</div>
-                </div>
-
-                <div class="row">
-                    <label for="topic">Temat:</label>
-                    <input type="text" name="topic" id="topic" required>
-                    <div class="invalid-text hide">Podaj temat!</div>
-                </div>
-
-                <div class="row">
-                    <label for="textarea">Wiadomość:</label>
-                    <textarea name="textarea" id="textarea" placeholder="Treść wiadomości..." required></textarea>
-                    <div class="invalid-text hide">Wpisz treśc wiadomości!</div>
-                </div>
-
-                <div class="buttons">
-                    <button class="clear" type="reset">Wyczyść</button>
-                    <button class="send" type="submit">Wyślij</button>
-                </div>
-            </form>
-            <div class="success hide">
-                <h3>Gratulacje udało Ci sie wysłać maila!</h3>
-            </div>
         </section>
     
    </main>
