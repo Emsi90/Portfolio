@@ -1,5 +1,47 @@
+@media (max-width: 992px) {
+    .content {
+
+        &__about-me {
+            flex-direction: column;
+        }
+
+        &__avatar {
+            margin-bottom: 30px;
+        }
+
+        &__header, &__subtitle, &__paragraph {
+            &--left-rwd-center {
+                text-align: center;
+            }
+        }
+
+        &__header {
+            &--left-rwd-center {
+                &::after {
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+        }
+
+        &__paragraph {
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+    }
+}
+
 @media (max-width: 600px) {
     .content {
+
+        &__avatar {
+            width: 240px;
+            height: 240px;
+        }
+
+        &__paragraph {
+            text-align: left;
+        }
         
         &__entrance {
             background-image: url('../img/head_bg_mini.jpg');
@@ -33,8 +75,13 @@
             height: 100%;
         }
         
+        &__text-mail {
+            font-size: 1.8rem;
+        }
+
         &__mail {
             font-size: 1.8rem;
+            margin: 50px 0 60px 0 ;
         }
         
     }

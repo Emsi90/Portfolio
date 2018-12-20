@@ -42,21 +42,27 @@
             <span class="header__entrance-name">Marcin Chojnacki</span>
             <span class="header__entrance-prof"><span class="white">Junior</span> Front-end Developer</span>
             </h1>
-            <div class="header__entrance-avatar">
+            <!-- <div class="header__entrance-avatar">
                 <img src="img/avatar2.jpg" class="header__entrance-avatar-img" alt="avatar Marcin Chojnacki">
-            </div>
+            </div> -->
         </div>
     </header>
     
     <main class="content">
     
         <section id="tresc" class="content__about-me">
-            <h2 class="content__header">O mnie</h2>
-            <p class="content__subtitle">Kilka słów o mnie...</p>
-            <p class="content__paragraph">
-                Nazywam się Marcin Chojnacki, mam 27 lat i mieszkam w Częstochowie. Jestem absolwentem informatyki ze specjalnością Technologie Internetowe i Techniki Multimedialne na Politechnice Częstochowskiej. Interesuję się kodowaniem stron internetowych, a w przyszłości chciałbym zostać full-stack developer'em. Swoją przygodę ze stronami internetowymi zacząłem w technikum, a na studiach pracowałem jako freelancer tworząc strony, loga, wizytówki i plakaty. Technologie i programy, które wykorzystuję w swoich projektach można zobaczyć poniżej. 
-            </p>
-
+            <div class="content__about-me-box">
+                <div class="content__avatar">
+                    <img src="img/avatar2.jpg" class="content__avatar-img" alt="avatar Marcin Chojnacki">
+                </div>
+            </div>
+            <div class="content__about-me-box">
+                <h2 class="content__header content__header--left-rwd-center">O mnie</h2>
+                <p class="content__subtitle content__subtitle--left-rwd-center">Kilka słów o mnie...</p>
+                <p class="content__paragraph content__paragraph--left-rwd-center">
+                    Nazywam się Marcin Chojnacki, mam 28 lat i mieszkam w Krakowie. Jestem absolwentem informatyki ze specjalnością Technologie Internetowe i Techniki Multimedialne na Politechnice Częstochowskiej. Interesuję się kodowaniem stron internetowych, a w przyszłości chciałbym zostać full-stack developer'em. Swoją przygodę ze stronami internetowymi zacząłem w technikum, a na studiach pracowałem jako freelancer tworząc strony, loga, wizytówki i plakaty. Technologie i programy, które wykorzystuję w swoich projektach można zobaczyć poniżej. 
+                </p>
+            </div>
         </section>
     
         <section class="content__skills">
@@ -99,8 +105,32 @@
                     <img src="img/git.png" class="skills-list__icon" alt="">
                     git
                 </li>
+                <li class="skills-list__item">
+                    <img src="img/wordpress.png" class="skills-list__icon" alt="">
+                    Wordpress
+                </li>
+                <li class="skills-list__item">
+                    <img src="img/prestashop.png" class="skills-list__icon" alt="">
+                    Prestashop
+                </li>
+                <li class="skills-list__item">
+                    <img src="img/webpack.png" class="skills-list__icon" alt="">
+                    Webpack
+                </li>
+                <li class="skills-list__item">
+                    <img src="img/react.png" class="skills-list__icon" alt="">
+                    React
+                </li>
+                <li class="skills-list__item">
+                    <img src="img/react-router.png" class="skills-list__icon" alt="">
+                    R-Router
+                </li>
+                <li class="skills-list__item">
+                    <img src="img/redux.png" class="skills-list__icon" alt="">
+                    Redux
+                </li>
             </ul>
-            <h3 class="content__subtitle content__subtitle--light">W najbliższym czasie mam zamiar poznać:</h3>
+            <!-- <h3 class="content__subtitle content__subtitle--light">W najbliższym czasie mam zamiar poznać:</h3>
             <ul class="skills-list">
                 <li class="skills-list__item">
                     <img src="img/react.png" class="skills-list__icon" alt="">
@@ -110,23 +140,13 @@
                     <img src="img/node.png" class="skills-list__icon" alt="">
                     node
                 </li>
-            </ul>
+            </ul> -->
         </section>
     
         <section class="content__projects">
             <h2 class="content__header">Portfolio</h2>
             <p class="content__subtitle">kilka moich projektów...</p>
             <ul class="content__projects-list">
-                <li class="content__projects-item">
-                    <img src="img/porfolio.jpg" alt="wczesniejsza wersja portfolio" class="content__projects-img">
-                    <div class="content__projects-links">
-                        <p class="content__projects-desc">Wczesniejsza wersja portfolio</p>
-                        <div class="links">
-                            <a href="https://github.com/Emsi90/Projects/tree/master/Portfolio" class="links__link links__link--github" target="_blank">Github</a>
-                            <a href="https://emsi90.github.io/Projects/Portfolio/" class="links__link links__link--live" target="_blank">Live</a>
-                        </div>
-                    </div>
-                </li>
                 <li class="content__projects-item">
                     <img src="img/maguwo.jpg" alt="maguwo strona treningowa" class="content__projects-img">
                     <div class="content__projects-links">
@@ -207,14 +227,25 @@
                         </div>
                     </div>
                 </li>
+                <li class="content__projects-item">
+                    <img src="img/weather-app.jpg" alt="Weather App" class="content__projects-img">
+                    <div class="content__projects-links">
+                        <p class="content__projects-desc">Weather App</p>
+                        <div class="links">
+                            <a href="https://github.com/Emsi90/weather-app" class="links__link links__link--github" target="_blank">Github</a>
+                            <a href="https://emsi90.github.io/weather-app/" class="links__link links__link--live" target="_blank">Live</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </section>
     
         <section id="kontakt" class="content__contact">
             <h2 class="content__header content__header--light">Kontakt</h2>
             <p class="content__subtitle content__subtitle--light">Skontaktuj się ze mną...</p>
+            <p class="content__text-mail">marcinchojnacki00@gmail.com</p>
             
-            <a href="mailto:marcinchojnacki00@gmail.com" class="content__mail">marcinchojnacki00@gmail.com</a>
+            <a href="mailto:marcinchojnacki00@gmail.com" class="content__mail">Wyślij e-maila</a>
         </section>
     
    </main>
