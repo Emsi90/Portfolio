@@ -421,15 +421,18 @@ body {
         padding: 10px 20px;
         text-decoration: none;
         margin: 50px 0 100px 0;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         color: #FFF;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
         border-radius: 5px;
-        background: linear-gradient(to bottom, #0dccda 1%,#1891ac 98%);
+        background: #0dccda;
+        // background: linear-gradient(to bottom, #0dccda 1%,#1891ac 98%);
+        transition: .2s all;
         
         &:hover, &:focus {
-            background: linear-gradient(to bottom, #1891ac 1%,#0dccda 98%);
-            box-shadow: 0px 9px 10px -7px rgba(0,0,0,0.3);
+            background: #00d0df;
+            // background: linear-gradient(to bottom, #1891ac 1%,#0dccda 98%);
+            box-shadow: 0px 0px 25px 0px rgba(13, 204, 218, 0.308);
         }
     }
     
